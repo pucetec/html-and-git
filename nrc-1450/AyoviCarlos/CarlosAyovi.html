@@ -1,11 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola mundo</title>
-</head>
-<body>
-    
-</body>
+<!DOCTYPE html>     
+<html land="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Salchipapa Carlos</title>
+        <style>
+            div{
+                margin-top: 20px;
+            }
+            #Selccion{
+                background-color: bisque;
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-right: 200px;
+                margin-bottom:  20px;
+                color: rgb(58, 167, 100);
+                width: 300px;
+            }
+
+            #Provincia {
+                background-color: rgb(190, 190, 43);
+                height: 10px;
+            }
+            
+            #Terminos{
+                background-color: rgb(196, 255, 253);
+                margin-top: 20px;
+                margin-left: 100px;
+                margin-right: 200px;
+                margin-bottom:  20px;
+                width: 300px;
+                padding: 40px 30px 40px 30px;
+                border: 2px #130213 solid;
+                border-radius: 20px;
+            }
+
+            .group{
+                background-color: bisque;
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-right: 200px;
+                margin-bottom:  20px;
+                color: rgb(58, 167, 100);
+                width: 300px;
+            }
+
+        </style>
+    </head>
+        
+    <!--Con el body empezamos en cuerpo de la pagina-->
+    <body>
+        <h1>Formulario de elecicion de comida </h1>
+
+        <!-- Barra para ingresar datos -->
+        <div>
+        Nombre del usuario y email
+        </div>
+        <div>
+        <label for="PrimerNombre"> Ingrese su nombre:</label> <input type="text" name="nombre" id="PrimerNombre"/>
+        </div>
+        <div>
+        <label for="email">Ingrese su email:</label> <input type="email" name="email" id="email"> 
+        </div>
+
+        <!-- Este es para usar opciones -->
+        <div id="Selccion">
+        <h2 > Seleccione su provincia</h2>
+        <select name="Provincia">
+            <option id="Provincia" value="">Seleccione su provincia</option>
+            <option 1="Provincia">Pichicha</option>
+            <option 2="Provincia">Esmeraldas</option>
+            <option 3="Provincia">Guayaquil</option>
+            <option 4="Provincia">Ambato</option>
+        </select>
+        </div>
+
+        <!-- Pregunta dre alerguia-->
+        <h2>¿Presenta alguna alergia?</h2>
+        <input type="radio" name="opciones" value="si"/>si
+        <input type="radio" name="opciones" value="no"/>no 
+        <a href="https://www.clarityne.com.ec/conoce-mas-sobre-las-alergias/tipos-de-alergias/" target="_blank" rel="noopener noreferrer">Alergias</a>
+
+        <h3>Lugar donde decea que tegamos nuetro local</h3> 
+        <input type="checkbox" name="lugar" value="nueva_urora">Nueva Aurora
+        <input type="checkbox" name="lugar" value="recreo">Recreo
+        <input type="checkbox" name="lugar" value="quicentro_sur">Qucentro Sur
+        
+        <div>
+        <!-- Boton de enviar-->
+        <input type="file" name="foto"/>
+        </div>
+
+        <!-- Boton para corfimar y enviar -->
+        <h3>Enviar formulario</h3>
+        <input type="submit" value="Enbiar"></input>
+        
+        <!-- Terminos y condiciones -->
+        <div id="Terminos">
+        <h4>
+            Terminos y condiciones
+        </h4>
+        <p>
+            Al consumir productos de nuestro restaurante, 
+            el cliente acepta que nuestros alimentos son preparados bajo normas de higiene y calidad; sin embargo, 
+            algunos productos pueden contener grasas, harinas, lácteos, gluten, frutos secos, mariscos u otros ingredientes que podrían causar alergias, 
+            intolerancias o afectar la salud de ciertas personas. Es responsabilidad del cliente informar previamente cualquier alergia, condición médica o 
+            restricción alimenticia antes de realizar su pedido. En caso de no comunicar dicha información, el restaurante no se hará responsable por reacciones 
+            alérgicas, malestares, complicaciones de salud o cualquier efecto derivado del consumo de nuestros productos. Asimismo, el consumo de comida rápida 
+            queda bajo responsabilidad del cliente, quien acepta estos términos al realizar su compra.
+        </p>
+        </div>
+    </body>
 </html>
+
+
+
