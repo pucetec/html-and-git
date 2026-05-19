@@ -1,0 +1,42 @@
+
+body{
+margin: 0%;
+}
+#mainContenedor{
+    display: flex;
+}
+
+#primerContenedor{
+    background-color: rgba(238, 207, 6, 0.976);
+    width: 60%;
+}
+
+#segundoContenedor{
+    background-color:rgba(238, 207, 6, 0.976);
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2{
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+}
+
+.items{
+    color: rgb(244, 244, 244);
+}
+
+#segundoCuadro{
+    background-color: rgb(231, 216, 6);
+    padding-bottom: 30%;
+}
+
+#tercerCuadro{
+    background-color: aliceblue;
+    padding-bottom: 70%;
+}
+
+#cuartoCuadro{
+    background-color: black;
+    padding-bottom: 10%;
+}
