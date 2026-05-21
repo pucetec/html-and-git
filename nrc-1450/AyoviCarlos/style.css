@@ -8,28 +8,37 @@ margin: 0%;
 
 #primerContenedor{
     background-color: rgba(238, 207, 6, 0.976);
-    width: 60%;
+    width: 70%;
+    padding: 0 40px 0px 30px;
 }
 
 #segundoContenedor{
     background-color:rgba(238, 207, 6, 0.976);
-    width: 40%;
+    width: 30%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 h2{
     font-family: 'Times New Roman', 'Times New Roman', Times, serif;
 }
 
-.items{
-    color: rgb(244, 244, 244);
+
+
+/* Este es el segundo cuadro
+- la parte de el cuador y centralizado
+*/
+#segundoCuadro{
+    background-color: rgb(229, 127, 11);
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-#segundoCuadro{
-    background-color: rgb(231, 216, 6);
-    padding-bottom: 30%;
-}
+/* Este es el tercer cuadro
+-La parte de cetralizado 
+*/
 
 #tercerCuadro{
     background-color: aliceblue;
@@ -40,3 +49,21 @@ h2{
     background-color: black;
     padding-bottom: 10%;
 }
+
+
+/*Este es el segundo cuador*/
+/* Esta pparte es para poner colores 
+a las letras y poder diseñar de mejor manera le 
+boton
+*/
+.items{
+    color: aliceblue;
+}
+
+#segundoCuadro button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+} 
