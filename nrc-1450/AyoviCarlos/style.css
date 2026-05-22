@@ -17,6 +17,7 @@ margin: 0%;
     width: 30%;
     display: flex;
     justify-content: space-evenly;
+    color: w;
 }
 
 h2{
@@ -39,16 +40,32 @@ h2{
 /* Este es el tercer cuadro
 -La parte de cetralizado 
 */
-
-#tercerCuadro{
+#tercerCuadro {
     background-color: aliceblue;
-    padding-bottom: 70%;
+    padding: 20px;
+}
+#tercerCuadro h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #cuartoCuadro{
-    background-color: black;
-    padding-bottom: 10%;
+    background-color: rgb(22, 16, 16);
+    padding-bottom: 20px;
 }
+
+#terminos{
+    color: #ccc;
+    padding: 30px;
+    text-align: center;
+}
+
 
 
 /*Este es el segundo cuador*/
@@ -67,3 +84,48 @@ boton
     border-radius: 20px;
     padding: 10px 20px;
 } 
+
+
+
+/*Este es el lugar de dibujo y forma de los cuadros, 
+Que viene hacer le tecer cuadro*/
+/*Este es la parte para darle forma del cubo*/
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*Este es para darle forma a la imagen detro del cuadro*/
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.price{
+    color: orange;
+}
+
+.chart{
+    background-color: #050645;
+    color: #f7f7f9;
+    display: flex;
+    width: 300px;
+    border: 1px solid #f7f7f9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#pedidos{
+    justify-content: center;
+    width: 80%;
+}
+
+#precio{
+    justify-self: center;
+    width: 20%;
+}
