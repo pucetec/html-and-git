@@ -1,0 +1,79 @@
+
+body{
+    margin: 0;
+    background: #f2f2f2;
+    font-family: Arial;
+}
+
+.contenedor{
+    width: 95%;
+    margin: auto;
+}
+
+
+#maincontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #333;
+    height: 100px;
+    background-color: #dd5f0b;
+    padding: 10px;
+    
+}
+#firstcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #dd5f0b;
+    padding: 4px;
+    font-size: 15px;
+}
+    
+
+#secondcontainer{
+    display: flex;
+    gap: 20px;
+    color: #000;
+    font-size: 15x;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.banner{
+    height: 220px;
+    background: #b47c12;
+    border: 2px solid brown;
+    text-align: center;
+    align-content: center;
+}
+
+.productos{
+    height: 1300px;
+    background: #cfd9ec;
+    border: 2px solid steelblue;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.comida{
+    width: 30%;
+}
+
+.promociones{
+    height: 1px;
+    background: #efe4be;
+    border: 2px solid goldenrod;
+}
+
+
+.footer{
+    height: 500px;
+    background: blueviolet;
+    border: 2px solid darkblue;
+    color: white;
+}

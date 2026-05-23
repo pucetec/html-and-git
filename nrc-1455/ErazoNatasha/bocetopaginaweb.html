@@ -5,75 +5,52 @@
 
     <title>LAS MEJORES HAMBURGUESAS</title>
 
-    <style>
-
-        body{
-            margin: 0;
-            background: #f2f2f2;
-            font-family: Arial;
-        }
-
-        .contenedor{
-            width: 95%;
-            margin: auto;
-        }
-
-        div{
-            border-radius: 25px;
-            margin-top: 10px;
-            font-size: 35px;
-            font-weight: bold;
-        }
-
-        .header{
-            height: 100px;
-            background: #cfe3cf;
-            border: 2px solid green;
-        }
-
-        .banner{
-            height: 220px;
-            background: #f4caca;
-            border: 2px solid brown;
-        }
-
-        .productos{
-            height: 280px;
-            background: #cfd9ec;
-            border: 2px solid steelblue;
-        }
-
-        .promociones{
-            height: 250px;
-            background: #efe4be;
-            border: 2px solid goldenrod;
-        }
-
-        .footer{
-            height: 150px;
-            background: blueviolet;
-            border: 2px solid darkblue;
-            color: white;
-        }
-
-    </style>
-
+    <link href="styles.css" rel="stylesheet"/>
 </head>
 
 <body>
-
-    <div class="contenedor">
-
-        <div class="header">
-            HEADER
+    <div id="maincontainer">
+        <div id="firstcontainer">
+            <h2>Burger house</h2>
         </div>
+            
+        <div id="secondcontainer" class="items">
+            <div>Inicio</div>
+            <div>Menú</div>
+            <div>Promociones</div>
+            <div>Contacto</div>
+        </div>
+    </div>
 
+    
         <div class="banner">
             LAS MEJORES HAMBURGUESAS
+            <p>comida rápida, deliciosa y hecha con pasión</p>
+            <button id="boton">Ordena ahora</button>
+        
         </div>
+        
+        
 
         <div class="productos">
-            PRODUCTOS DESTACADOS
+            <div id="hamburgesaclasica" class="comida">
+                <h2>hamburgesa clasica</h2>
+                <p>carne, Queso, lechuga, tomate y salsa especial</p>
+                <h3>$12.99</h3>
+                <img width="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcfffMB2QFzTv3pjPg-WTvwCNUw0jiIqkLEw&s">
+            </div>
+            <div id="pizzapersonal" class="comida">
+                <h2>pizza personal</h2>
+                <p>Queso mozzarella, peperoni y salsa de tomate</p>
+                <h3>$15.99</h3>
+                <img width="150px" src="https://www.shutterstock.com/image-photo/magelang-indonesia-september-25-2025-260nw-2682294803.jpg">
+            </div>
+            <div id="papasfritas" class="comida">
+                <h2>papas fritas</h2>
+                <p>Patatas fritas crujientes con sal</p>
+                <h3>$3.99</h3>
+                <img width="150px" src="https://www.shutterstock.com/image-photo/tasty-french-fries-on-plate-260nw-2753386495.jpg">
+            </div>
         </div>
 
         <div class="promociones">
