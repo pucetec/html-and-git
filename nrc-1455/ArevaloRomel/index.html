@@ -1,6 +1,150 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        Hola mundogro
-    </body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BurgerHouse</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      .navBar {
+        background-color: #f5a623;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+      }
+      .heroSection {
+        background-color: #f5a623;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+      .heroSection h1 {
+        font-size: 32px;
+        margin-bottom: 8px;
+      }
+      .heroSection button {
+        margin-top: 14px;
+        background-color: #222;
+        color: white;
+        border: none;
+        padding: 10px 22px;
+        cursor: pointer;
+      }
+      .featuredSection {
+        background-color: #f0ece4;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .featuredSection h2 {
+        margin-bottom: 16px;
+      }
+      .cardContainer {
+        display: flex;
+        gap: 20px;
+      }
+      .card {
+        background-color: white;
+        width: 200px;
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+      .card p {
+        font-size: 13px;
+        color: #666;
+        margin: 4px 0;
+      }
+      .card .price {
+        color: #f5a623;
+        font-weight: bold;
+      }
+      .promoSection {
+        background-color: #e8e0d5;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .promoSection h2 {
+        margin-bottom: 16px;
+      }
+      .promoCard {
+        background-color: #1a3a4a;
+        color: white;
+        width: 600px;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+      .footer {
+        background-color: #222;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #aaa;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navBar">
+      <span><strong>BurgerHouse</strong></span>
+      <nav>Inicio &nbsp; Menú &nbsp; Promociones &nbsp; Contacto</nav>
+    </div>
+    <div class="heroSection">
+      <h1>Las mejores hamburguesas</h1>
+      <p>Comida rápida, deliciosa y hecha con pasión.</p>
+      <button>Ordenar ahora</button>
+    </div>
+    <div class="featuredSection">
+      <h2>Productos destacados</h2>
+      <div class="cardContainer">
+        <div class="card">
+          <h3>Hamburguesa clásica</h3>
+          <p>Carne, queso, lechuga y tomate.</p>
+          <p class="price">$5.99</p>
+        </div>
+        <div class="card">
+          <h3>Pizza personal</h3>
+          <p>Mozzarella, pepperoni y tomate.</p>
+          <p class="price">$4.99</p>
+        </div>
+        <div class="card">
+          <h3>Papas fritas</h3>
+          <p>Crujientes y doradas.</p>
+          <p class="price">$2.50</p>
+        </div>
+      </div>
+    </div>
+    <div class="promoSection">
+      <h2>Promociones</h2>
+      <div class="promoCard">
+        <span>Combo familiar — 4 hamburguesas + papas + bebidas</span>
+        <strong>$19.99</strong>
+      </div>
+      <div class="promoCard">
+        <span>Combo estudiante — Hamburguesa + papas + bebida</span>
+        <strong>$7.99</strong>
+      </div>
+    </div>
+    <div class="footer">
+      BurgerHouse © 2026 | Instagram | Facebook | WhatsApp
+    </div>
+  </body>
 </html>
