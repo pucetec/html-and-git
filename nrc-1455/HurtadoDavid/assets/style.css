@@ -1,0 +1,61 @@
+
+
+        .bloque1 {
+            height: 50px;
+            background-color: #d5e8d4;
+            display: flex;
+            text-align: center;
+           
+            
+        }
+
+        .left_container {
+
+            display: flex;
+            width: 70%;
+            margin-top: 1%;
+
+        }
+        .right_container {
+
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 1%;
+           
+           
+
+        }
+        .button {
+            color: black;
+        }
+
+
+        .bloque2 {
+            height: 180px;
+            background-color: #f8cecc;
+            align-items: center;
+             text-align: center;
+             
+        }
+
+        .button-action {
+            color: white;
+            
+        }
+
+        .bloque3 {
+            height: 200px;
+            background-color: #dae8fc;
+        }
+
+        .bloque4 {
+            height: 150px;
+            background-color: #fff2cc;
+        }
+
+        .bloque5 {
+            height: 100px;
+            background-color: #7f00ff;
+        }
