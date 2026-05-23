@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+#menuContainer{
+    background-color: #cd0508;
+    height: 50px;
+    color: #f5f5dc;
+    display: flex;
+}
+.titleContainer{
+    width: 70%;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-size: 20px;
+}
+.optionsContainer{
+    display: flex;
+    width: 30%;
+    justify-content:space-around;
+    margin-top: 1%;
+}
+#burgersContainer{
+    background-color:#feae0d;
+    height: 300px;
+}
+.slogan{
+    margin-top: 4%;
+    font-size: 30px;
+}
+.phase{
+    margin-top: 7%;
+    font-size: 20px;
+
+}
+#productsContainer{
+    background-color:#f5f5dc;
+    height: 600px;
+}
+#promotionsContainer{
+    background-color: #feae0d;
+    height: 600px;
+}
+#footerContainer{
+    background-color: #b05328;
+    height: 60px;
+    color: #f5f5dc;
+}
