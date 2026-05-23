@@ -1,0 +1,37 @@
+.contenedor {
+    width: 96%;
+    padding: 50px;
+    background-color: #579953;
+    display:flex;        
+}
+
+.contenedorizquierdo {
+    display:flex;
+    width: 70%;
+}
+
+.contenedorderecho {
+    text-align: right;
+    display: flex;
+    width: 30%;
+    justify-content: space-between
+}
+
+.bloque3 {
+    background-color: #fff2cc;
+    height: 150px;
+    width: 99%;
+    text-align: center;
+}
+
+.bloque4 {
+    background-color: #6c5ce7;
+    height: 150px;
+    width: 99%;
+}
+
+.bloque5 {
+    background-color: #e5e75c;
+    height: 150px;
+    width: 99%;
+}
