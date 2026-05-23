@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <style>
-        #menuContainer{
-            background-color: rgb(253, 154, 61);
-            height: 60px;
-        }
-        #bestContainer{
-            background-color: rgb(151, 108, 0);
-            height: 155px;
-        }
-        #featuredContainer{
-            background-color: rgb(250, 255, 177);
-            height: 200px;
-        }
-        #promotionsContainer{
-            background-color: rgb(230, 100, 0);
-            height: 130px;
-        }
-        #footerContainer{
-            background-color: rgb(35, 43, 43);
-            height: 65px;
-        }
-    </style>
+    <head>
+        <title>LAS MEJORES HAMBURGUESAS</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
     <body>
-        <div id="menuContainer">MENU INICIAL</div>
-        <div id="bestContainer">LAS MEJORES HAMBURGUESAS</div>
-        <div id="featuredContainer">PRODUCTOS DESTACADOS</div>
-        <div id="promotionsContainer">PROMOCIONES</div>
-        <div id="footerContainer">FOOTER</div>
+        <div class="mainContainer">
+            <div class="leftContainer">
+                Burger House
+            </div>
+            <div class="rightContainer">
+                <div>
+                    Inicio
+                </div>
+                <div>
+                    Promociones
+                </div>
+                <div>
+                    Menú
+                </div>
+                <div>
+                    Contacto
+                </div>
+            </div>
+        </div>
+            
+        <div id="bestContainer">
+            Las mejores hamburguesas
+            <div>
+                comida rápida y deliciosa
+            </div>
+            <div>
+                <button>
+                    Obtener ahora
+                </button>
+            </div>
+        </div>
+
+        <div class="products">        
+            <div id="featuredContainer">
+                PRODUCTOS DESTACADOS
+            </div>
+            <div class="productsContainer">
+                <div class="left-product">
+                    hamburguesas clásica
+                </div>
+                <div class="center-product">
+                    pizza personal
+                </div>
+                <div class="right-product">
+                    papas fritas
+                </div>
+            </div>
+
+        </div>
+        <div id="promotionsContainer">
+            PROMOCIONES
+        </div>
+        <div id="footerContainer">
+            FOOTER
+        </div>
     </body>
 </html>

@@ -1,0 +1,51 @@
+.mainContainer{
+    background-color: rgb(253, 154, 61);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.leftContainer{
+    width: 60%;
+}
+.rightContainer{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+#bestContainer{
+    background-color: rgb(151, 108, 0);
+    height: 155px;
+    align-content: center;
+    text-align: center;
+    border: 1px solid #333;
+    padding: 5px;
+}
+.products{
+    background-color: blueviolet;
+    border: 1px solid #333;
+    padding: 5px;
+}
+#featuredContainer{
+    align-content: center;
+    text-align: center;
+}
+.productsContainer{
+    height: 200px;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#promotionsContainer{
+    background-color: rgb(230, 100, 0);
+    height: 130px;
+}
+#footerContainer{
+    background-color: rgb(35, 43, 43);
+    height: 65px;
+}
