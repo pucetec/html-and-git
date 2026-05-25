@@ -1,58 +1,125 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fcf8f2;
 }
 
-#maincontainer{
+
+#barra-navegacion {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffca3a;
+    padding: 10px 40px;
+}
+
+.enlaces-menu {
+    display: flex;
+}
+
+.enlaces-menu h3 {
+    margin: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#banner-principal {
+    background-color: #e65c00;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contenido-banner h1 {
+    font-size: 36px;
+}
+
+.contenido-banner p {
+    font-size: 18px;
+}
+
+.boton-ordenar {
+    background-color: #122c44;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#contenedor-productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px #aaa; 
+}
+
+.imagen-tarjeta {
+    height: 150px;
+    background-color: #1a3a5f;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.imagen-tarjeta img {
+    width: 100%; 
+    height: 100%;      
+    border-radius: 8px; 
+}
+
+.precio {
+    display: block;
+    margin-top: 10px;
+    color: #e65c00;
+    font-weight: bold;
+}
+
+
+#contenedor-promociones {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-
+    padding: 3%;
 }
-#firstcontainer{
+
+.barra-promocion {
     display: flex;
-    background-color: #fefe48;
-    width: 55%;
-    padding-left: 3% ;
-}
-#secondcontainer{
-    display: flex;
-    background-color: #fefe48;
-    width: 15%;
-    
-}
-#thirdcontainer{
-    background-color: #fefe48;
-    display: flex;
-    width: 15%;
-}
-#cuartocontainer{
-    background-color: #fefe48;
-    display: flex;
-    width: 15%;
+    background-color: #122c44;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 40%
 }
 
 
-#promociones {
-  display: flex;
-  flex-direction: column;
-  background-color: orange;
-  justify-content: center;
-  height: 300px;
-  display: flex;
-  text-align: center;
-  color: #ffffff;
-
+#pie-pagina {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
 }
-
-#productos_destacados{
-  display: flex;
-  flex-direction: row;
-  background-color: #fefe48;
-  justify-content: space-around;
-  
-}
-
-input{
-  border-radius: 20 px;
-}
-
