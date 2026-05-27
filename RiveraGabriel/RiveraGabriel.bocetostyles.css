@@ -1,0 +1,103 @@
+.bloque1 {
+    height: 80px;
+    background-color: yellow; 
+    display: flex;
+    border: 4px solid black; 
+    align-items: center;
+}
+
+.left_container {
+    width: 250px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.right_container {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+.menu-item {
+    border: 1px solid blue;
+    background-color: white;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.bloque2 {
+    height: 200px;
+    background-color: orange; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    border: 5px solid red;
+    margin-top: 10px;
+}
+
+.button-action {
+    background-color: black;
+    color: white;
+    width: 150px;
+    border: 3px solid blue;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.bloque3 {
+    background-color: lightblue; 
+    border: 3px dashed green;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center; 
+}
+
+.productos-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.producto {
+    width: 200px; 
+    background-color: white;
+    border: 2px solid black; 
+    padding: 10px;
+    text-align: center; 
+}
+
+.bloque4 {
+    background-color: pink; 
+    border: 4px solid purple;
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center; 
+}
+
+.promo-container {
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+}
+
+.promo {
+    width: 250px; 
+    background-color: darkblue;
+    color: yellow;
+    border: 5px double white; 
+    padding: 10px;
+    text-align: center; 
+}
+
+.bloque5 {
+    height: 60px; 
+    background-color: gray;
+    color: white;
+    border: 3px solid black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
