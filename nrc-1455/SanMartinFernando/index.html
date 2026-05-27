@@ -6,42 +6,169 @@
     <title>BurgerFactory</title>
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
-        .navbar {
-            display: flex;
-            justify-content: space-between; /* Logo izquierda y menú derecha */
-            align-items: center;
-            padding: 0 20px;
-            background-color: red; /* Fondo rojo solo para logo y menú */
-            height: 50px;
-        }
+    .navbar {
+        display: flex;
+        justify-content: space-between;/* Logo izquierda y menú derecha */
+        align-items: center;
+        padding: 0 20px;
+        background-color: red;/* Fondo rojo solo para logo y menú */
+        height: 50px;
+    }
 
-        .logo {
-            font-weight: bold;
-            color: white;
-        }
+    .logo {
+        font-weight: bold;
+        color: white;
+    }
 
-        .menu {
-            display: flex;
-            gap: 15px;
-        }
+    .menu {
+        display: flex;
+        gap: 15px;
+    }
 
-        .menu a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        } 
-        .hero {
-    background-color: #ff0000;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    } 
+
+    .hero {
+        background-color: #ff0000;
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero button {
+        background-color: #222;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    /* Sección Productos destacados */
+.productos {
+    background-color: red; /* Fondo rojo */
+    color: white; /* Letras blancas en la sección */
+    text-align: center; /* Centra el título */
+    padding: 40px 20px; /* Espacio interno */
 }
-    </style>
+
+/* Título Productos destacados */
+.productos h2 {
+    color: white; /* Título en blanco */
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Contenedor de las tarjetas */
+.contenedor-productos {
+    display: flex; /* Coloca las tarjetas en fila */
+    justify-content: center; /* Centra las tarjetas */
+    gap: 25px; /* Espacio entre tarjetas */
+}
+
+/* Tarjetas de productos */
+.tarjeta {
+    background-color: white; /* Mantiene las tarjetas blancas */
+    color: black; /* Texto negro dentro de la tarjeta */
+    width: 30%;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+/* Imágenes */
+.tarjeta img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Nombre del producto */
+.tarjeta h3 {
+    font-size: 15px;
+    margin: 10px 0 5px 0;
+}
+
+/* Descripción */
+.tarjeta img {
+    width: 100%;              /* La imagen ocupa el ancho de la tarjeta */
+    height: 150px;            /* Todas las imágenes tendrán la misma altura */
+    object-fit: contain;      /* Muestra la imagen completa sin cortarla */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+/* Precio */
+.precio {
+    color: #ff6600;
+    font-weight: bold;
+} 
+.promo {
+            background-color: #00384d;
+            color: white;
+            border-radius: 8px;
+            padding: 18px 25px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .promo h3 {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .promo p {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .promo span {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        @container (max-width: 768px) {
+            .productos {
+                width: 100%;
+            }
+
+            .contenedor-productos {
+                grid-template-columns: 1fr;
+            }
+
+            .contenedor-promociones {
+                grid-template-columns: 1fr;
+            }
+
+            .promo {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+   
+</style>
 </head>
 
 <body>
@@ -61,6 +188,50 @@
     <p>Nuestras hamburguesas son deliciosas, rápidas y con las mejores máquinas del mercado</p>
     <button>Ordenar ahora</button>
     </section>
+    <section class="productos">
+    <h2>Productos destacados</h2>
+
+    <div class="contenedor-productos">
+
+        <div class="tarjeta">
+            <img src="CLASSIC_BURGER.jpg" alt="CLASSIC BURGER">
+            <h3>CLASSIC BURGER<h3>
+            <p>Hamburguesa de 100% carne de res a la parrilla. Salsa clásica y lechuga.</p>
+            <p class="precio">$7.99</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="THE_BIG_CARL.jpg" alt="THE BIG CARL">
+            <h3>THE BIG CARL</h3>
+            <p>Dos piezas de carne 100% de res asadas a la parrilla, nuestra salsa clásica, dos rebanadas de queso americano y lechuga.</p>
+            <p class="precio">$9.50</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="NATURAL_CUT_FRENCH_FRIES.jpg" alt="NATURAL-CUT FRENCH FRIES">
+            <h3>NATURAL-CUT FRENCH FRIES</h3>
+            <p>Papas a la francesa importada.</p>
+            <p class="precio">$3.50</p>
+        </div>
+        </div>
+            <div class="promo">
+                <div>
+                    <h3>Combo Promo estudiante</h3>
+                    <p>Hamburguesa + papas + bebida</p>
+                </div>
+                <span>$8.99</span>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        BurgerFactory © 2026 | Instagram | Facebook | WhatsApp
+    </footer>
+
+
+    </div>
+</section>
 
 </body>
 </html>
