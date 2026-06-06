@@ -1,0 +1,120 @@
+
+/* Body, importante la tipografía */
+body{
+margin: 0;
+background-color: #e7e7e7;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor Principal*/
+#contenedorPrincipal{
+background-color: #e7e0da;
+width: 90%;
+margin: auto;
+margin-top: 20px;
+padding: 40px;
+}
+
+/* Menú, toda esta parte 
+es para el contenedor que esta con 
+foto imagene de foto y descripcion */
+#contenedorMenu{
+margin-bottom: 50px;
+display: flex;
+justify-content: space-evenly;
+}
+
+/* Solo es para poner el texto en negrilla */
+#contenedorMenu h4{
+font-weight: bold;
+}
+
+/* Contenedo donde va la Información */
+#contenedorInformacion{
+border: 1px solid gray;
+padding: 50px;
+}
+
+/* Texto */
+#contenedorTexto h1{
+font-size: 80px;
+margin-bottom: 20px;
+}
+
+
+
+/* Redes */
+#contenedorTexto h3{
+margin-top: 40px;
+}
+
+#contenedorRedes{
+margin-top: 20px;
+}
+
+#contenedorRedes i{
+font-size: 40px;
+margin-right: 20px;
+}
+
+/* Foto */
+#contenedorFoto{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#contenedorFoto img{
+width: 100%;
+max-width: 400px;
+height: 400px;
+object-fit: cover;
+border: 3px solid blueviolet;
+}
+
+
+/* Contacto:Este contenedor esta posicionando
+   y estilo de la parte de los contactos */
+#contenedorContacto{
+margin-top: 50px;
+border: 1px solid gray;
+padding: 40px;
+}
+
+#contenedorContacto h2{
+text-align: center;
+margin-bottom: 30px;
+}
+
+#formularioContacto{
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+#formularioContacto input{
+padding: 12px;
+border: 1px solid gray;
+}
+
+#formularioContacto textarea{
+padding: 12px;
+border: 1px solid gray;
+}
+
+#formularioContacto button{
+width: 200px;
+padding: 12px;
+background-color: black;
+color: white;
+border: none;
+}
+
+/* El ultimo conntenedor */
+#contenedorFinal{
+background-color: #1f1a1f;
+color: white;
+text-align: center;
+padding: 25px;
+margin-top: 30px;
+}
