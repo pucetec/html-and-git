@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Domenica Peralta</title>
+    <style>
+        
+    
+        #favoritefood{
+
+            color: rgb(238, 9, 207);
+            
+    
+           
+        }
+
+        .group{
+            
+            background-color: rgb(238, 159, 214);
+            padding: 40px 30px 40px 30px;
+            margin-top: 100px;
+
+        }
+        
+        .comida{
+            
+            background-color: rgb(226, 189, 231);
+            margin-top: 30px;
+            height: 300px;
+            color: rgb(216, 103, 201);
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 100px;
+            width: 300px;
+            padding: 40px 30px 40px 30px;
+            border-radius: 20px;
+            border: 8px rgb(199, 27, 147) solid;
+        }
+
+    </style>
+</head>
+<body>
+ <div class="group">
+    <h1 id="favoritefood">Formulario de comidas favoritas</h1>
+    
+    
+
+    <div class="comida">
+        <h2>Ingresa tus datos personales</h2>
+        <label for="name">Ingresa tu nombre:</label>
+        <input type="text" name="name" id="name"/>
+    </div>
+
+    <div class="comida">
+        <label for="familyname">Ingresa tu apellido:</label>
+        <input type="text" name="familyname" id="familyname"/>
+    </div>
+     <div class="comida">
+        <label for="direccion">Ingresa tu direccion:</label>
+        <input type="text" name="direccion" id="direccion"/>
+     </div>
+
+    <div class="comida">
+        <label for="email">Ingresa tu correo:</label>
+        <input type="email" name="email" id="email"/>
+    </div>
+
+    <div class="comida">
+        <h2>Selecciona tu comida favorita</h2>
+        <label for="comidas">Selecciona tu comida fav:</label>
+        <select name="comidas" id="comidas">
+            <option value="">Escoge tu comida</option>
+            <option value="conchas asadas">Conchas asadas</option>
+            <option value="camarones apanados">Camarones apanados</option>
+            <option value="encocado de pescado">Encocado de pescado</option>
+        </select>
+    </div>
+
+    <div class="comida">
+        <h2>Alergias</h2>
+        <label>¿Te causan alergia los mariscos?</label> <br>
+        <input type="radio" name="alergia" value="si"/> Sí
+        <input type="radio" name="alergia" value="no"/> No 
+        <div class=""><a href="https://es.wikipedia.org/wiki/Gastronom%C3%ADa_de_Ecuador" target="_blank">comida ecuatoriana</a></div>
+    </div>
+
+    <div class="comida">
+        <h2>Lugares de mariscos en ecuador</h2>
+        <label>Lugares:</label><br>
+        <input type="checkbox" name="lugar1" value="manabi"/> Manaba
+        <input type="checkbox" name="lugar2" value="esmeraldas"/> Esmeraldeña
+        <input type="checkbox" name="lugar2" value="guayaquil"/> Guayaquileña
+    </div>
+
+    <div class="comida">
+        <input type="file" name="foto"/>
+    </div>
+
+    <div class="comida">
+        <input type="submit" value="Enviar"/>
+    </div>
+ </div>
+
+</body>
+</html>
