@@ -41,7 +41,10 @@ font-size: 80px;
 margin-bottom: 20px;
 }
 
-
+/* Tamaño de la letra */
+#contenedorTexto p{
+font-size: 20px;
+}
 
 /* Redes */
 #contenedorTexto h3{
@@ -69,7 +72,7 @@ width: 100%;
 max-width: 400px;
 height: 400px;
 object-fit: cover;
-border: 3px solid blueviolet;
+border: 3px solid rgb(25, 23, 26);
 }
 
 
