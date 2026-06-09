@@ -1,0 +1,1 @@
+console.log("Página de hamburguesas cargada correctamente");

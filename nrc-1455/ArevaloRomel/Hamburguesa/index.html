@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburguesa</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        .contenedor {
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .encabezado {
+            height: 90px;
+            background-color: #ffcc00;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .titulo {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .menu {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .menu div {
+            border: 1px solid black;
+            padding: 10px 18px;
+            background-color: #ffe680;
+        }
+
+        .banner {
+            height: 230px;
+            background-color: #ff9900;
+            border: 2px solid black;
+        }
+
+        .seccion-productos {
+            height: 280px;
+            background-color: #f2f2f2;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .producto {
+            width: 28%;
+            height: 200px;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        .seccion-promociones {
+            height: 170px;
+            background-color: #d9ead3;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .promo {
+            width: 45%;
+            height: 100px;
+            background-color: #93c47d;
+            border: 2px solid black;
+        }
+
+        .seccion-extra {
+            height: 160px;
+            background-color: #cfe2f3;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .extra-izquierda {
+            width: 50%;
+            background-color: #9fc5e8;
+            border: 2px solid black;
+        }
+
+        .extra-derecha {
+            width: 50%;
+            background-color: #6fa8dc;
+            border: 2px solid black;
+        }
+
+        .pie {
+            height: 80px;
+            background-color: #333333;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="encabezado">
+            <div class="titulo">
+                BurgerHouse
+            </div>
+
+            <div class="menu">
+                <div>Inicio</div>
+                <div>Menú</div>
+                <div>Promociones</div>
+                <div>Contacto</div>
+            </div>
+        </div>
+
+        <div class="banner"></div>
+
+        <div class="seccion-productos">
+            <div class="producto"></div>
+            <div class="producto"></div>
+            <div class="producto"></div>
+        </div>
+
+        <div class="seccion-promociones">
+            <div class="promo"></div>
+            <div class="promo"></div>
+        </div>
+
+        <div class="seccion-extra">
+            <div class="extra-izquierda"></div>
+            <div class="extra-derecha"></div>
+        </div>
+
+        <div class="pie"></div>
+
+    </div>
+
+    <script src="accion.js"></script>
+
+</body>
+</html>
