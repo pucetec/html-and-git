@@ -1,6 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <title>
+    <head>
+        <title>
         Mi Html
-    </title>
+        </title>
+            <style>
+                div{
+                    background-color: rgb(255, 0, 34);
+                    width: 500px;
+                    margin-top: 100px;
+                    margin-left: 50px;
+                    margin-right: 40px;
+                    margin-bottom: 50px;
+                    padding: 16px 32px 16px 32px;
+                    border: 16px black double;
+                    border-radius: 16px;
+                }
+                #data_name{
+                background-color: rgb(42, 116, 165);
+                padding-top: 10px;
+                padding-bottom: 10px;
+                }
+                #pref{
+                background-color: rgb(4, 250, 98);
+                padding-top: 10px;
+                padding-bottom: 10px;
+                }
+
+                #med{
+                background-color: rgb(4, 250, 238);
+                padding-top: 10px;
+                padding-bottom: 10px;
+                }
+                .group{
+                background-color: rgb(127, 193, 255);
+
+                }
+
+            </style>
+    </head>
+    <body>     
+        <h1>
+            Formulario de comidas favoritas
+        </h1>
+
+        <div> 
+            <h2>
+                Hola Mundo en la comida
+            </h2>  
+        </div>
+        
+        <div id="data_name">
+            <h2>
+            Tus datos personales
+            </h2>
+            <p>
+                <label for="first_name"> Ingresa tu nombre: </label>
+                <input type="text" name="first_name" id="first_name" />
+            </p>
+            <p>
+                <label for="last_name"> Ingresa tu apellido: </label>
+                <input type="text" name="last_name" id="last_name" /> 
+            </p>
+            <p>
+                <label for="email"> Ingresa tu correo: </label>
+                <input type="email" name="email" id="email" />
+
+            </p>
+            <p>
+                <label> Subir tu foto: </label>
+                <input type="file" name="foto"/>
+            </p>
+            
+            
+        </div>
+        
+        <div id="pref">
+            <h2>
+            Tus preferencias en comidas:
+            </h2>
+            <p>
+                <label> Ingresa tu comida favorita: </label>
+                <select name="comida">
+                    <option value="" >Escoge tu camidad favorita</option>>
+                    <option value="pizza" >Pizza</option>>
+                    <option value="ceviche" >Ceviche</option>>
+                    <option value="pollo_frito" >Pollo frito</option>>
+                    <option value="carne_frita" >Carne frita</option>>
+                    <option value="pasta" >Pasta</option>>
+                </select>
+            </p>
+            <p>
+                <label> Excoge tu tipo de comida preferida: </label>
+                <input type="checkbox" name="tipo" value="italiana"/> Italiana 
+                <input type="checkbox" name="tipo" value="manaba"/> Manaba 
+                <input type="checkbox" name="tipo" value="mexica"/> Mexicana
+                <input type="checkbox" name="tipo" value="extrangera"/> Extrangera
+                <input type="checkbox" name="tipo" value="tradicional"/> Tradicional
+            </p>
+        </div>
+        
+        <div id="med">
+            <h2>
+            Datos medicos:
+            </h2>
+            <p>
+                <label> Tiene una alergia: </label>
+                <input type="radio" name="alergia" value="si"/>Si
+                <input type="radio" name="alergia" value="si"/>No 
+                <a href="https://www.mayoclinic.org/es/diseases-conditions/food-allergy/symptoms-causes/syc-20355095" target="_blank"> Mas sobre alergia</a>
+            </p>
+            <p>
+                <label> Tiene un problema medico: </label>
+                <input type="radio" name="medico" value="si"/>Si
+                <input type="radio" name="medico" value="si"/>No
+            </p>
+        </div>
+        <div class="group">
+            <h2>
+            Tu caliicacion:
+            </h2>
+            <label> Ingresa calificacion: </label>
+            <select name="calificacion">
+                <option value="" >Nota</option>>
+                <option value="mal" >Mal</option>>
+                <option value="aceptable" >Aceptable</option>>
+                <option value="bueno" >Bueno</option>>
+                <option value="exelente" >Exelente</option>>
+                <option value="sin_nota" >Sin Nota</option>>
+            </select>
+            <input type="submit" value="Enviar"></input>
+    
+    </body>
 </html>
+   
