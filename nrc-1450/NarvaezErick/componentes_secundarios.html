@@ -1,0 +1,123 @@
+<!-- Componentes secundarios
+
+## Títulos
+H1 -> Título principal: 1 por página (si se ponen más baja el SEO)
+H2 -> Título secundario
+
+## Divisores
+Los divisores <div> sirven para dividir pero deben configurarse
+
+## Aplicar estilos
+**Directamente:** tipo_tag{} al tag directamente -> div{} Se aplica sobre todos los tags de ese tipo
+**Por ID** Los id's siempre se representan con # -> #nombre_id{}
+**Sobre una clase:** .nombre_clase{}
+
+
+Margin aplica para antes de los contenedores
+padding aplica para el contenedor de cada cosa, lo expande o lo achica
+
+sudo /usr/sbin/useradd -G adm,sudo,users -m -s /bin/bash enarvaez
+-G grupos le roba los permisos a admin, users, y sudo
+-m make your oun directory
+-s start with bin bash
+nombre del usuario a crear
+pide contraseña
+
+
+luego
+sudo su
+passwd poner mi contraseña
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Hola Mundo</title>
+    <style>
+        body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif}
+        
+        div {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        #favorite_food {
+            background-color: antiquewhite;
+            height: 30px;
+            color: blue;
+            width: 500px;
+            font-size: 18px;
+        }
+
+        #files {
+            background-color:beige;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border: 2px solid rosybrown;
+            margin-right: 240px;
+            border-radius: 8px;
+        }
+
+        .group {
+            background-color: antiquewhite;
+            font-size: 18px;
+        }
+    </style> <!-- El color siempre se aplica al texto -->
+</head>
+
+<body>
+    
+    <div>
+        <div id="personal_info_container">
+            <h1>Análisis de comidas favoritas</h1>
+            <p>Este formulario cumple con la normativa actualizada de la Ley de Protección de datos personales, por lo
+                cual será usada con total discreción.</p>
+            <h2>Datos personales</h2>
+            <div>Nombre: <input type="text"></div>
+            <div>Correo: <input type="text"></div>
+        </div>
+
+        <div id="food_info_container">
+            <h2>Información alimenticia</h2>
+            <div id="favorite_food">Comida favorita: <input type="checkbox"> Cuy con papas <input type="checkbox"> Papas
+                con
+                cuy
+            </div>
+            <div class="group">
+                Alergias: <input type="radio"> Sí <input type="radio"> No <a
+                    href='https://pucetec.puce.edu.ec/2026/login/index.php' target="_blank">Más sobre alergias</a>
+            </div>
+         </div>
+
+         <div>
+            <h2>Información alimenticia</h2>
+            
+            <div id="favorite_food">Comida favorita: <input type="checkbox"> Cuy con papas <input type="checkbox"> Papas
+                con
+                cuy 
+            </div>
+            
+            <div class="group">
+                Alergias: <input type="radio"> Sí <input type="radio"> No <a
+                    href='https://pucetec.puce.edu.ec/2026/login/index.php' target="_blank">Más sobre alergias</a>
+                <!-- Blank hace abrir en una pestaña nueva-->
+            </div>
+
+
+         </div>
+
+
+         <div id="submit_container">
+            <h2>Subir información</h2>
+            <div id="files" style="background-color: azure; padding-left: 20px;"><input type="file" value=""></div>
+            <div><input type="submit"> Enviar formulario</div>
+         </div>
+
+
+
+</body>
+
+</html>
