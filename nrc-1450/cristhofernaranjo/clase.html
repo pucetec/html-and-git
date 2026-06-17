@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi primer contenedor</title>
+        <style>
+            div {
+                background-color: rgb(0, 128, 75); 
+                margin-top: 50px;           
+                margin-left: 50px;
+                margin-right: 50px;
+                padding: 30px; 
+                font-family: sans-serif;
+                border: 20px solid rgb(0, 255, 255)  
+
+    
+            }
+
+            div {
+                  background-color: palevioletred; 
+                margin-top: 50px;           
+                margin-left: 50px;
+                margin-right: 50px;
+                padding: 30px; 
+                font-family: sans-serif;
+                border: 2px dotted  rebeccapurple 
+            }
+
+            h1{
+                background-color: whitesmoke; 
+            }
+             h2{
+                background-color: whitesmoke; 
+            }
+
+            h2{
+                background-color: whitesmoke; 
+
+
+            }
+            label{
+                background-color: red; 
+            }
+
+            label{
+                background-color: greenyellow; 
+            }
+
+            strong{
+                background-color: plum; 
+
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        
+        <div>
+            <h1>Hola mundo - Desarrollo Web</h1>
+
+            <h2>Ingresa tu nombre: </h2>
+            <input type="text" name="firstname" id="firstname"><br><br>
+
+            <label>Ingresa tu correo: </label>
+            <input type="email" name="correo" id="correo"><br><br>
+
+            <label>Escoge tu comida favorita: </label>
+            <select name="comida">
+                <option value="">Selecciona una...</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Hamburgesa">Hamburguesa</option>
+                <option value="papas fritas">Papas fritas</option>
+                <option value="Tallarin">Tallarín con albóndigas</option>
+            </select>
+            <br><br>
+
+            ¿No te gusta alguna comida?
+            <input type="radio" name="disgusto" value="si"> sí
+            <input type="radio" name="disgusto" value="no"> no
+            <br><br>
+
+            <strong>¿Qué tipo de comida prefieres?</strong>
+            <br><br>
+            <input type="checkbox"> Comida rápida<br>
+            <input type="checkbox"> Comida italiana<br>
+            <input type="checkbox"> Comida colombiana<br>
+            <br>
+
+            <input type="submit" value="Enviar">
+        </div> 
+        <div class="group">
+            <h2>Información adicional</h2>
+            ¿Tienes alguna alergia?
+            <a href="https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies" target="_blank">ⓘ</a>
+            <input type="radio" name="allergy" value=""/>Si
+            <input type="radio" name="allergy" value=""/>No
+        </div>
+
+        <div class="group"><h2>Terminar encuesta</h2>
+            <input type="submit" value="Enviar"></input>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taller</title>
+</head>
+<body>
+
+    <style>
+
+        .Campos_datosP{
+            padding-bottom: 50px;
+            box-sizing: border-box;
+            background-color: blueviolet;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(226, 226, 17);
+            border-radius: 20px;
+        }
+
+        .Campos_datosP:hover{
+            transition: 0.2s;
+            transform: rotate3d(360deg)
+        }
+
+        input:hover{
+            transform: rotate(1080deg);
+            transition: 3s;
+            margin-left: 150px;
+        }
+
+        div{
+            margin-top: 30px;
+        }
+
+        .Archivos_Envios{
+            font-size: large;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+
+        #archivo:hover{
+            background-color: black;
+            color: aqua;
+            border-color: blueviolet;
+            border-radius: 10px;
+            transition: 0.2s;
+            transform: scale(1.1);
+        }
+
+        #TC:hover{
+            background-color: black;
+            color: aqua;
+            border-color: blueviolet;
+            border-radius: 10px;
+            transition: 5s;
+            transform: rotate(1080deg);
+        }
+
+        a:hover{
+            box-sizing: border-box;
+            background-color: black;
+            color: aqua;
+            border-color: blueviolet;
+            border-radius: 10px;
+            transition: 0.2s;
+            transform: rotate(360deg);
+        }
+
+    </style>
+
+
+    <h1>Formulario de comida</h1>
+    <div class="Campos_datosP">
+        <h2>Datos personales</h2>
+        <input type="text" placeholder="Ingrese su nombre">
+        <input type="text" placeholder="Ingrese su apellido">  
+        <input type="text" placeholder="Ingrese su correo">  
+    </div>
+
+    <div class="Datos_Comida">
+        <h2>
+            ¿Que tipo de comidas  te gustan!?
+        </h2>
+
+            <input type="text" placeholder="Comida favorita">
+            <select class="Tipo de comida" id="TC">
+                <option value="">Que tipo de comida es?</option>
+                <option value="Italiana">Italiana</option>
+                <option value="Mexicana">Mexicana</option>
+                <option value="Ecuatoriana">Ecuatoriana</option>
+            </select>
+            Tiene alguna alergia? <input type="radio"/> Yes | <input type="radio"/> No
+                <a href="https://www.youtube.com/watch?v=s5K2gkq98Mw&list=RDs5K2gkq98Mw&start_radio=1" target="blank">-------> Más sobre alergias aquí! <-------</a>   
+    </div>
+
+    <div class="Archivos_Envios">
+            <input type="file" value="" id="archivo">
+            <input type="submit" id="archivo"/> ;)
+    </div>
+
+</body>
+</html>

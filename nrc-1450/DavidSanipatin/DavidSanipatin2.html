@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>David Sanipatin - PUCETEC software</title>
+
+        <style>
+            div{
+                margin-top: 30px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                color: rgb(3, 39, 107);
+                width: 300px;
+                font-size: 15px;
+            }
+            #name{
+                background-color: #06b1a8;
+            }
+            #email{
+                background-color: aquamarine;
+            }
+            #archivo{
+                background-color: lightpink;
+            }
+            #comidas{
+                background-color: violet;
+            }
+            #sazon{
+                background-color: royalblue;
+            }
+            #enfermedad{
+                background-color: magenta;
+            }
+            
+            .group{
+                background-color: greenyellow;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Formulario de cominadas favoritas
+        </h1>
+        <p>
+        Hola mundo, no se que hago :c
+        </p>
+        <h2>
+            Datos Personales
+        </h2>
+        <div id="name">
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" name="nombre" id="nombre"/>
+        </div>
+        <div id="email">
+        <label for="email">Ingresa tu correo:</label>
+        <input type="email" name="email" id="email"/>
+        </div>
+        <div id="archivo">
+            <label for="archivo">Subir foto</label>
+            <input type="file" name="foto"/>
+        </div>
+        <h2>
+            Tipos de comidas
+        </h2>
+        <div id="comidas">
+        <label for="comidas">elige tu comida favorita</label>
+        <select name="Comidas">
+            <option value="">Comidas</option>
+            <option value="helado">Helado</option>
+            <option value="lasaña">Lasana</option>
+            <option value="pizza">Pizza</option>
+            <option value="seco_de_Pollo">Seco de Pollo</option>
+            <option value="chaufa">Chaufa</option>
+        </select>
+        </div>
+        <div id="sazon">
+        <label>Sazón que Prefieres</label><br><br>
+        <input type="checkbox" name="tipos_de_Comida" value="ecuatoriana"/>Ecuatoriana
+        <input type="checkbox" name="tipos_de_Comida" value="espanol"/>Español
+        <input type="checkbox" name="tipos_de_Comida" value="italiana"/>Italaiana
+        <input type="checkbox" name="tipos_de_Comida" value="japonesa"/>Japonesa
+        <input type="checkbox" name="tipos_de_Comida" value="koreana"/>Koreana
+        </div>
+        <h2>
+            Preguntas de precaucion
+        </h2>
+        <div id="enfermedad">
+        <label>tienes alguna enfermedad</label>
+        <input type="radio" name="Privacida" value="si"/>si
+        <input type="radio" name="Privacida" value="no"/>no
+        </div>
+        <h3>
+            informacion sobre alergias
+        </h3>
+        <div class="group">
+        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medlineplus.gov/spanish/ency/article/000817.htm&ved=2ahUKEwj73fTWuKWUAxUxzvACHTKmMBIQFnoECB0QAQ&usg=AOvVaw2sjwT6r-wCZDS4EZSTPOhs" target="_blank">Mas sobre alergias</a>
+        </div>
+        <div class="group">
+            <input type="submit" value="Enviar"></imput>
+        </div>
+    </body>
+</html>

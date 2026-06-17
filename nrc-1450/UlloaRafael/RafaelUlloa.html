@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title> Rafael Ulloa - PUCE TEC</title>
+        
+        <style>
+            div{
+                margin-top: 25px;
+                margin-bottom: 10px;
+                margin-left: 100px;
+                margin-right: 10px;
+                height: auto;
+                color: black;
+                width: auto;
+                font-size: 15px;
+            }
+            #favoriteFood{
+                background-color: #3f68e4;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            .group{
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Desarrollo Web - Test</h1>
+        
+        <div>
+            <h2>Datos Personales:</h2>
+            <div>
+                <label for="firstName">Ingresa tu nombre:</label>
+                <input type="text" name="firstName" id="firstName"/>
+            </div>
+        
+        
+            <div>
+                <label for="lastName">Ingresa tu apellido:</label>
+                <input type="text" name="lastName" id="lastName"/>
+            </div>
+            
+            <div>
+                <label for="email">Ingresa tu correo:</label>
+                <input type="email" name="email" id="email"/>
+            </div>
+
+            <div>
+                Foto:
+                <input type="file" name="photo"/>
+            </div>
+        </div>
+
+        <div>
+            <h2>Alimentación</h2>
+            
+            <div id="favoriteFood">
+                Selecciona tu comida favorita
+                <select name="food">
+                    <option value=""></option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Hamburguesa">Hamburguesa</option>
+                    <option value="Encebolllado">Encebollado</option>
+                    <option value="Bandera">Bandera</option>
+                    <option value="Tigrillo">Tigrillo</option>
+                </select>
+            </div>
+            
+            <div>
+                ¿Qué tipos de comidas te gustan?
+                <input type="checkbox" name="pref_food" value="ecuadorian"/> Ecuatoriana
+                <input type="checkbox" name="pref_food" value="colombian"/> Colombiana
+                <input type="checkbox" name="pref_food" value="italian"/> Italiana
+                <input type="checkbox" name="pref_food" value="mexican"/> Mexicana
+                <input type="checkbox" name="pref_food" value="asian"/> Asiática
+            </div>
+        </div>
+
+        <div class="group">
+            <h2>Información adicional</h2>
+            ¿Tienes alguna alergia?
+            <a href="https://my-clevelandclinic-org.translate.goog/health/diseases/9196-food-allergies?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" target="_blank">ⓘ</a>
+            <input type="radio" name="allergy" value=""/>Si
+            <input type="radio" name="allergy" value=""/>No
+        </div>
+
+        <div class="group"><h2>Terminar encuesta</h2>
+            <input type="submit" value="Enviar"></input>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 500px;
+            background-color: aquamarine;
+            padding: 20px;
+            border: 8px solid yellow;
+            border-radius: 20px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .titulo {
+            background-color: rgb(207, 182, 182);
+            font-style: italic;
+            padding: 20px;
+            text-align: center;
+            border: none; 
+            height: auto;
+        }
+
+        .favoriteFood {
+            background-color: rgb(139, 78, 252);
+            font-style: oblique;
+            color: white;
+            padding: 20px;
+            height: auto;
+            border: none;
+        }
+
+        .group {
+            background-color: rgb(179, 255, 1);
+            font-style: normal;
+            height: auto;
+            border: 2px solid #555;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="titulo">
+        <h1>Bienvenidos a mi página de comida favorita</h1>
+    </div>  
+
+    <h1 style="text-align: center;">Formulario de comida</h1>
+
+    <div class="titulo">
+        <p>Llena el siguiente formulario para compartir tu platillo favorito</p>
+        
+        <div class="group">
+            <h2>Datos personales</h2>
+            <label for="firstName">Ingrese su Nombre:</label> 
+            <input type="text" id="firstName"/>
+            <br><br>
+            <label for="lastName">Ingrese su Apellido:</label> 
+            <input type="text" id="lastName"/>
+        </div>
+    </div>
+
+    <div class="favoriteFood">
+        <h2>Categorías de alimentos</h2>
+        <input type="checkbox"/> Bolón 
+        <input type="checkbox"/> Encebollado 
+        <input type="checkbox"/> Tacos
+    </div>
+
+    <div class="group">
+        <h3>Información sobre alergias</h3>
+        <p>¿Eres alérgico?: 
+            <input type="radio" name="alergia"/> Sí | 
+            <input type="radio" name="alergia"/> No
+        </p>
+        <a href="https://www.mayoclinic.org/es/diseases-conditions/food-allergy/symptoms-causes/syc-20355095" target="_blank">Más sobre alergias</a>
+    </div>
+
+    <div class="favoriteFood">
+        <p>Agrega una foto de tu platillo favorito:</p>
+        <input type="file"/>
+    </div>
+
+    <div class="group"> 
+        <input type="submit" value="Enviar Formulario" style="width: 100%; padding: 10px; cursor: pointer;">
+    </div>
+
+    <div class="favoriteFood">
+        <h3>¿Cómo te gustaría descubrir tus platillos?</h3>
+        <p>Describe el lugar ideal para comer:</p>
+        <input type="text"/>
+        <br><br>
+        <p>Si seleccionamos uno de estos sabores:</p>
+        <input type="checkbox"/> Chicharrones | <input type="checkbox"/> Yuca | <input type="checkbox"/> Cebolla 
+        <p>¿En qué platillo lo agregarías?</p>
+        <input type="radio" name="mix"/> Bolón | <input type="radio" name="mix"/> Encebollado | <input type="radio" name="mix"/> Tacos
+    </div>
+
+</body>
+</html>

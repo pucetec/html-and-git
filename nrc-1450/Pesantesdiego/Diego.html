@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Primera clase de desarrollo web</title>
+
+        <style>
+            div{
+                margin-top: 30px;
+                
+                background-color: rgb(118, 140, 211);
+            }
+
+            #datos{
+                margin-left: 134px;
+                letter-spacing: 5px;
+                background-color: bisque;
+                color: brown;
+                width: 30px;
+            }
+
+            #favoritefood{
+                background-color: rgb(255, 215, 35);
+                padding-top: 30px;
+                color: green;
+                padding: 100px;
+                width: 105px;
+            }
+
+            .group{
+                letter-spacing:  7px;
+                background-color: red;
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>Formulario Sobre Comida</h1>
+        
+        <div id="datos"">
+        <h2>Datos personales</h2>
+        <label>Ingresa tu Nombre </label>
+        <input type="text" name = "Nombre" id="nombre"/>
+        </div>
+
+        <div id="datos">
+        <label>Ingresa tu apellido </label>
+        <input type="text" name="apellido" id="apellido">
+        </div>
+
+        <div id="datos">
+        <label>Ingresa tu correo </label>
+        <input type="email" name = "Correo" id="Correo"/>
+        </div>
+
+        <div id="favoritefood">
+        <h2>Seleccion de comida </h2>
+        <select name="Comida" id="Comida y Restaurante">
+            <option value="">Escoge tu comida </option>
+            <option value="Papas Fritas">Papas Fritas</option>
+            <option value="Encebollado">Encebollado</option>
+            <option value="Hornado">Hornado</option>
+            <option value="Ceviche">Ceviche</option>
+            <option value="Hamburguesa">Hamburguesa</option>
+            </select>
+        </div>
+
+        <div id="favoritefood">
+        <h2>Seleccion de pais con la mejor comida</h2>
+        <input type="checkbox" name="tipoComida" value="ecuatoriana"/>Ecuatoriana 
+        <input type="checkbox" name="tipoComida" value="mexicana"/>Mexicana 
+        <input type="checkbox" name="tipoComida" value="colombiana"/>Colombiana 
+        </div>
+
+        <div class="group">
+        <h3>Cuidados personales</h3>
+        <label>Tienes alguna alergia</label>
+        <input type="radio" name="lugar" value="SI"/>SI
+        <input type="radio" name="lugar" value="NO"/>NO
+        <a href="https://www.mayoclinic.org/es/diseases-conditions/allergies/in-depth/allergy-medications/art-20047403" target="_blank">Tratados de alergias</a>
+        </div>
+
+        <div class="group">
+        <h2>Sube un ejemplo de tu comida preferida </h2>
+        <input type="file" name="Fotos" />
+        </div>
+        <div>
+        <input type="submit" value="Enviar"/>
+        </div>
+
+    </body>
+</html>

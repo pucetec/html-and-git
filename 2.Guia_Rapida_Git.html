@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>
-    PUCETEC - Guía Rápida: Git + GitLab
+    PUCETEC - Guía Rápida: Git + GitHub
   </title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -13,14 +13,14 @@
 <body>
   <div class="container">
     <header>
-      <h1>Guía Rápida: Git + GitLab</h1>
+      <h1>Guía Rápida: Git + GitHub</h1>
       <p class="lead">Material de apoyo para estudiantes — control de versiones y entrega de tareas.</p>
     </header>
 
     <section class="card">
       <span class="badge">Objetivo</span>
       <p>
-        Aprender el flujo básico para trabajar con Git y GitLab: crear una llave SSH, clonar un repositorio, crear un
+        Aprender el flujo básico para trabajar con Git y GitHub: crear una llave SSH, clonar un repositorio, crear un
         branch, guardar cambios y subirlos para revisión.
       </p>
     </section>
@@ -32,18 +32,18 @@
       </p>
       <ul>
         <li>Crear y registrar una llave SSH.</li>
-        <li>Clonar un repositorio desde GitLab.</li>
+        <li>Clonar un repositorio desde GitHub.</li>
         <li>Crear un branch de trabajo.</li>
         <li>Agregar archivos y crear commits.</li>
         <li>Configurar nombre y correo en Git.</li>
-        <li>Subir el branch a GitLab.</li>
+        <li>Subir el branch a GitHub.</li>
       </ul>
     </section>
 
     <section class="card">
       <h2>🔐 1. Crear y registrar tu llave SSH</h2>
       <p>
-        La llave SSH permite conectar tu computadora con GitLab sin escribir usuario y contraseña en cada operación.
+        La llave SSH permite conectar tu computadora con GitHub sin escribir usuario y contraseña en cada operación.
         Ejecuta este comando en tu terminal:
       </p>
       <pre><code>ssh-keygen</code></pre>
@@ -56,7 +56,7 @@
 
       <div class="tip">
         <p>
-          Copia todo el texto de la llave pública y pégalo en GitLab desde
+          Copia todo el texto de la llave pública y pégalo en GitHub desde
           <strong>Settings → SSH Keys → Add new key</strong>.
         </p>
       </div>
@@ -68,7 +68,7 @@
         Una vez configurada la llave, clona el repositorio al que fuiste invitado. El comando crea una copia local del
         proyecto en tu computadora.
       </p>
-      <pre><code>git clone git@gitlab.com:usuario/nombre-del-repositorio.git</code></pre>
+      <pre><code>git clone git@github.com:usuario/nombre-del-repositorio.git</code></pre>
 
       <p>Después de clonar, entra a la carpeta del repositorio:</p>
       <pre><code>cd nombre-del-repositorio</code></pre>
@@ -104,9 +104,28 @@
 
       <h3>Crear un commit</h3>
       <p>
-        El commit guarda una versión de tus cambios con un mensaje descriptivo.
+        El commit guarda una versión de tus cambios con un mensaje descriptivo. En clase usaremos siempre este formato:
       </p>
-      <pre><code>git commit -m "Agrego mi maqueta en HTML"</code></pre>
+      <pre><code>git commit -m "fix: [ABC-7204] [Fabian] handle bad request response"</code></pre>
+
+      <div class="tip">
+        <p><strong>Regla para mensajes de commit:</strong></p>
+        <ul>
+          <li>Debe empezar sólo con <code>fix</code>, <code>feat</code>, <code>chore</code> o <code>refactor</code>.</li>
+          <li>Luego va el número de la tarjeta entre corchetes, por ejemplo <code>[ABC-7204]</code>.</li>
+          <li>Si no existe una tarjeta, usa <code>[nostory]</code>.</li>
+          <li>Después va tu nombre entre corchetes, por ejemplo <code>[Fabian]</code>.</li>
+          <li>Finalmente va un mensaje claro y consecuente con los cambios realizados.</li>
+        </ul>
+
+        <p><strong>¿Qué significa cada opción?</strong></p>
+        <ul>
+          <li><code>fix</code>: se usa cuando corriges un error.</li>
+          <li><code>feat</code>: se usa cuando agregas una nueva funcionalidad.</li>
+          <li><code>chore</code>: se usa para cambios de mantenimiento, configuración o tareas internas.</li>
+          <li><code>refactor</code>: se usa cuando mejoras el código sin cambiar lo que hace.</li>
+        </ul>
+      </div>
 
       <h3>Configurar nombre y correo</h3>
       <p>Si Git te pide configurar tu nombre o correo, usa:</p>
@@ -115,21 +134,39 @@ git config --global user.email "tu_correo@ejemplo.com"</code></pre>
     </section>
 
     <section class="card">
-      <h2>🚀 5. Subir tu branch a GitLab</h2>
+      <h2>🚀 5. Subir tu branch a GitHub</h2>
       <p>
-        Finalmente, sube tus cambios al repositorio remoto para que estén disponibles en GitLab.
+        Finalmente, sube tus cambios al repositorio remoto para que estén disponibles en GitHub.
       </p>
-      <pre><code>git push origin NombreBranch</code></pre>
+      <pre><code>git push --set-upstream origin NombreBranch</code></pre>
 
       <p>Ejemplo:</p>
-      <pre><code>git push origin FabianMaqueta</code></pre>
+      <pre><code>git push --set-upstream origin FabianMaqueta</code></pre>
+
+      <p class="muted">
+        La opción <code>--set-upstream</code> conecta tu branch local con el branch remoto. Después de hacerlo una vez,
+        normalmente podrás usar sólo <code>git push</code> para los siguientes cambios en ese mismo branch.
+      </p>
 
       <div class="tip">
         <p>
-          Después de subir tu branch, GitLab normalmente mostrará una opción para crear un Merge Request. Usa esa opción
+          Después de subir tu branch, GitHub normalmente mostrará una opción para crear un Pull Request. Usa esa opción
           cuando necesites entregar tu trabajo para revisión.
         </p>
       </div>
+
+      <h3>Crear un Pull Request</h3>
+      <p>
+        Un Pull Request es la forma de pedir que revisen tus cambios antes de unirlos a la rama principal del proyecto.
+        Después de subir tu branch:
+      </p>
+      <ol>
+        <li>Entra al repositorio en GitHub.</li>
+        <li>Haz clic en <strong>Compare &amp; pull request</strong>.</li>
+        <li>Verifica que tu branch sea el que contiene tus cambios.</li>
+        <li>Escribe un título claro y una descripción breve de lo que hiciste.</li>
+        <li>Haz clic en <strong>Create pull request</strong>.</li>
+      </ol>
     </section>
 
     <section class="card">
@@ -152,7 +189,7 @@ git config --global user.email "tu_correo@ejemplo.com"</code></pre>
           </tr>
           <tr>
             <td>Clonar repo</td>
-            <td><code>git clone git@gitlab.com:usuario/repositorio.git</code></td>
+            <td><code>git clone git@github.com:usuario/repositorio.git</code></td>
           </tr>
           <tr>
             <td>Entrar al repo</td>
@@ -172,7 +209,7 @@ git config --global user.email "tu_correo@ejemplo.com"</code></pre>
           </tr>
           <tr>
             <td>Guardar cambios</td>
-            <td><code>git commit -m "mensaje"</code></td>
+            <td><code>git commit -m "feat: [nostory] [Tu Nombre] mensaje claro del cambio"</code></td>
           </tr>
           <tr>
             <td>Configurar nombre</td>
@@ -184,7 +221,7 @@ git config --global user.email "tu_correo@ejemplo.com"</code></pre>
           </tr>
           <tr>
             <td>Subir branch</td>
-            <td><code>git push origin NombreBranch</code></td>
+            <td><code>git push --set-upstream origin NombreBranch</code></td>
           </tr>
         </tbody>
       </table>
@@ -199,8 +236,8 @@ git config --global user.email "tu_correo@ejemplo.com"</code></pre>
       </details>
 
       <details>
-        <summary>¿Qué es GitLab?</summary>
-        <p>GitLab es una plataforma donde puedes alojar repositorios Git, colaborar y entregar cambios mediante Merge Requests.</p>
+        <summary>¿Qué es GitHub?</summary>
+        <p>GitHub es una plataforma donde puedes alojar repositorios Git, colaborar y entregar cambios mediante Pull Requests.</p>
       </details>
 
       <details>
@@ -221,7 +258,7 @@ git config --global user.email "tu_correo@ejemplo.com"</code></pre>
           <li>Crea un branch con tu nombre.</li>
           <li>Agrega un archivo HTML simple.</li>
           <li>Haz un commit con un mensaje claro.</li>
-          <li>Sube tu branch a GitLab.</li>
+          <li>Sube tu branch a GitHub.</li>
         </ol>
       </div>
     </section>

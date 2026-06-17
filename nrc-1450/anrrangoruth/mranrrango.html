@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ruth pagina web</title>
+        <style>
+            div{
+                margin-top: 12 px;
+                margin-bottom: 10 px;
+                margin-right: 5px;
+                margin-left: 2 px;
+                height: auto;
+                color: rgb(214, 15, 15);
+                width: 500 px;
+                font-size: 40px;
+            }
+
+            #favouritefood{
+                background-color: rgb(147, 147, 194);
+            }
+
+            .group{
+                background-color: rgb(196, 222, 255);
+                height: 150px;
+                color: rgb(63, 165, 42);
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Formulario de análisis de comidas favoritas</h1>
+        
+        <div class="group">   
+            <h2>Datos personales</h2>
+                <div>
+                    <label for="firstname">ingresa tu nombre:</label>
+                    <input type="text" name="nombre" id="firstname"/>
+                </div>
+
+                <div>
+                    <label for="lastname">ingresa tu apellido:</label>
+                    <input type="text" name="nombre" id="lastname"/>
+                </div>
+
+                <div>
+                    <label for="mail"> ingresa tu mail:</label>
+                <input type="mail" name="mail" id="mail"/>
+                </div>
+        </div>
+            
+        <div id="favouritefood">
+            <h3>tipos de comida</h3>    
+            <label> elige tu comida fav</label>
+            <select name="comida">
+                <option value=""> escoge tu comida favorita </option>
+                <option value="comida_1"> spaguetti </option>
+                <option value="paella"> paella </option>
+                <option value="bolon"> bolon </option>
+            </select>
+        </div>
+        
+        <divclass="group">
+            <h3>Alergias importates o excepsiones en comidas</h3>
+                <label>eres vegetariano?</label>
+                <input type="radio" name="privacidad" value="si"/> si
+                <input type="radio" name="privacidad" value="no"/> no
+        </div>
+            
+            <div>
+                <label>tienes alergias?</label><br><br>
+            <input type="checkbox" name="comidatipo" value="gluten"/> gluten
+            <input type="checkbox" name="comidatipo" value="lacteos"/> lacteos            
+            <input type="checkbox" name="comidatipo" value="nueces"/> nueces
+            </div>
+            
+            <div>
+                <label for="otro">otra:</label>
+            <input type="otro" name="otro" id="otro"/>
+            </div>
+
+            <div>
+                <a href="https://medlineplus.gov/spanish/ency/article/000817.htm" target="_blank">más sobre alergias</a>
+            </div>
+
+            <div class="group">
+                <input type="file" name="foto"/>
+            </div>
+
+            <div>
+                <input type="submit" value="enviar"></input>
+            </div>
+            
+    </body>
+</html>

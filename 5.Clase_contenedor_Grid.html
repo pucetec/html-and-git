@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    PUCETEC - Clase: Contenedor CSS Grid
+  </title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Clase: Contenedor CSS Grid</h1>
+        <p class="lead">
+          Maquetación bidimensional: filas, columnas y áreas con CSS Grid.
+        </p>
+      </header>
+
+      <section class="card">
+        <span class="badge">Objetivo</span>
+        <p>
+          Comprender la sintaxis básica de CSS Grid y crear un layout simple
+          usando filas, columnas, <code>grid-template-areas</code> y filas
+          implícitas con <code>grid-auto-rows</code>.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>1) ¿Qué es CSS Grid?</h2>
+        <p>
+          CSS Grid es un sistema de maquetación bidimensional que organiza el
+          contenido en <strong>filas</strong> y <strong>columnas</strong>. A
+          diferencia de Flexbox (principalmente un eje), Grid trabaja ambos
+          ejes al mismo tiempo.
+        </p>
+        <p class="tip">
+          Activa el grid en el contenedor con <code>display: grid;</code>. Los
+          hijos directos pasan a ser <em>grid items</em>.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>2) Propiedades básicas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Propiedad</th>
+              <th>Función</th>
+              <th>Ejemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>display: grid</code></td>
+              <td>Convierte el contenedor en grid container.</td>
+              <td><code>display: grid;</code></td>
+            </tr>
+            <tr>
+              <td><code>grid-template-columns</code></td>
+              <td>Define columnas (cantidad y tamaño).</td>
+              <td><code>repeat(3, 1fr)</code></td>
+            </tr>
+            <tr>
+              <td><code>grid-template-rows</code></td>
+              <td>Define filas explícitas (cantidad y tamaño).</td>
+              <td><code>60px 1fr 60px</code></td>
+            </tr>
+            <tr>
+              <td><code>grid-auto-rows</code></td>
+              <td>
+                Tamaño de las filas <em>implícitas</em> (las que el grid crea
+                cuando hay más ítems de los definidos en
+                <code>grid-template-rows</code>).
+              </td>
+              <td><code>100px</code>, <code>minmax(80px, auto)</code></td>
+            </tr>
+            <tr>
+              <td><code>gap</code></td>
+              <td>Espacio entre filas y columnas.</td>
+              <td><code>gap: 16px;</code></td>
+            </tr>
+            <tr>
+              <td><code>justify-items</code> / <code>align-items</code></td>
+              <td>Alineación horizontal y vertical dentro de cada celda.</td>
+              <td><code>start</code>, <code>center</code>, <code>end</code></td>
+            </tr>
+            <tr>
+              <td><code>grid-template-areas</code></td>
+              <td>Layout con nombres de áreas (header, sidebar, etc.).</td>
+              <td><code>"header header"</code></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Valores frecuentes en columnas</h3>
+        <ul>
+          <li>
+            <code>grid-template-columns: 200px 1fr 2fr;</code> → tres columnas
+            con ancho fijo y fracciones flexibles.
+          </li>
+          <li>
+            <code>grid-template-columns: repeat(3, 1fr);</code> → tres columnas
+            iguales.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>3) Ejemplo básico (3 columnas iguales)</h2>
+        <p>
+          Cuadrícula de 3 columnas con
+          <code>grid-template-columns: repeat(3, 1fr);</code> y
+          <code>gap</code> entre celdas.
+        </p>
+
+        <div class="grid-ejemplo">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+        </div>
+
+        <h3>HTML del ejemplo</h3>
+        <pre><code>&lt;div class="grid-ejemplo"&gt;
+  &lt;div class="grid-item"&gt;1&lt;/div&gt;
+  &lt;div class="grid-item"&gt;2&lt;/div&gt;
+  &lt;div class="grid-item"&gt;3&lt;/div&gt;
+  &lt;div class="grid-item"&gt;4&lt;/div&gt;
+  &lt;div class="grid-item"&gt;5&lt;/div&gt;
+  &lt;div class="grid-item"&gt;6&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h3>CSS del ejemplo</h3>
+        <pre><code>.grid-ejemplo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.grid-item {
+  padding: 18px;
+  text-align: center;
+  border-radius: 10px;
+}</code></pre>
+      </section>
+
+      <section class="card">
+        <h2>4) Ejemplo con <code>grid-template-areas</code></h2>
+        <p>
+          Layout con encabezado, barra lateral, contenido y pie usando nombres
+          de áreas en el contenedor y <code>grid-area</code> en cada hijo.
+        </p>
+
+        <div class="layout-ejemplo">
+          <div class="layout-header">Header</div>
+          <div class="layout-sidebar">Sidebar</div>
+          <div class="layout-content">Contenido principal</div>
+          <div class="layout-footer">Footer</div>
+        </div>
+
+        <h3>CSS del ejemplo</h3>
+        <pre><code>.layout-ejemplo {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  gap: 10px;
+}
+.layout-header { grid-area: header; }
+.layout-sidebar { grid-area: sidebar; }
+.layout-content { grid-area: content; }
+.layout-footer { grid-area: footer; }</code></pre>
+      </section>
+
+      <section class="card">
+        <h2>5) Ejemplo con <code>grid-auto-rows</code></h2>
+        <p>
+          Solo definimos <strong>una fila explícita</strong> de 56px con
+          <code>grid-template-rows</code>. Los ítems que no caben en esa fila
+          generan filas <em>implícitas</em>; su altura la controla
+          <code>grid-auto-rows: 100px</code>.
+        </p>
+        <p class="tip">
+          La primera fila (ítems 1 y 2) mide 56px. Las filas siguientes (ítems
+          3 en adelante) miden 100px cada una.
+        </p>
+
+        <div class="grid-auto-ejemplo">
+          <div class="grid-auto-item grid-auto-item--explicit">1 · fila explícita</div>
+          <div class="grid-auto-item grid-auto-item--explicit">2 · fila explícita</div>
+          <div class="grid-auto-item">3 · fila implícita</div>
+          <div class="grid-auto-item">4 · fila implícita</div>
+          <div class="grid-auto-item">5 · fila implícita</div>
+        </div>
+
+        <h3>CSS del ejemplo</h3>
+        <pre><code>.grid-auto-ejemplo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 56px;      /* solo la 1.ª fila es explícita */
+  grid-auto-rows: 100px;         /* altura de las filas que se crean solas */
+  gap: 10px;
+}</code></pre>
+      </section>
+
+      <footer>
+        <p class="muted">
+          <strong>Facultad:</strong> Pucetec<br>
+          <strong>Carrera:</strong> Desarrollo de Software<br>
+          <strong>Materia:</strong> Desarrollo Web<br>
+          <strong>Docente:</strong> Fabián Aguirre
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
