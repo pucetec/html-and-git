@@ -1,0 +1,163 @@
+.bloquePrincipal{
+    display:flex;
+}
+
+.bloqueTitulo{
+    background-color: blueviolet;
+    width: 80%;
+}
+
+.bloqueTituloOpciones{
+    width: 20%;
+    background-color: aqua;
+    display:flex;  
+    
+}
+
+.ini{
+    padding-left: 10px;
+}
+
+.men{
+    padding-left: 10px;
+}
+
+.prom{
+    padding-left: 10px;
+}
+
+.cont{
+    padding-left: 10px;
+}
+
+.bloqueInicio{
+    display: flex;
+    background-color: aquamarine;
+}
+
+.niIdea{
+    width: 100%;
+    padding: 20%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.boton{
+    background-color: coral;
+}
+
+.opciones{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-image: url("imagenes/Captura desde 2026-05-19 15-37-52.png");
+}
+
+.orden{
+    display: flex;
+    padding: 40px;
+}
+
+.op1:hover{
+    transform: rotate(1080deg);
+    transition: 2.0s;
+}
+
+
+.op1{
+    
+    margin-top: 50px;
+
+    
+}
+
+.op2:hover{
+    transform: rotate(1080deg);
+    transition: 2.0s;
+}
+
+
+.op2{
+    
+    margin-top: 50px;
+    
+}
+
+.op3:hover{
+    transform: rotate(1080deg);
+    transition: 2.0s;
+}
+
+
+.op3{
+    
+    margin-top: 50px;
+    
+}
+
+
+
+
+.titular{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: px;
+    text-align: right;
+
+}
+
+.dest{
+    color: red;
+    text-align: center;
+    margin-right: 30px;
+    position: absolute; top:20px; margin-left: 290px; margin-top: 190px;
+}
+
+.gif{
+    width: 800px;
+}
+
+.list{
+    display:flex;
+    width: 50%;
+    height: 360px;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-image: url("imagenes/Captura de pantalla 2026-05-20 145633.png");
+}
+
+.izqui{
+    text-align: left;
+    color: white;
+}
+
+.promTitu{
+    width: 50%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.gifK{
+    display: flex;
+    padding-left: 650px; 
+}
+
+.destP{
+
+    color: red;
+    text-align: center;
+    margin-right: 30px;
+    position: absolute; top:20px; margin-left: 690px; margin-top: 10px;
+    
+}
+
+body{
+    background-image: url("imagenes/Captura de pantalla 2026-05-20 155501.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
