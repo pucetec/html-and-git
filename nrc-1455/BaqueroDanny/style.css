@@ -1,0 +1,64 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .encabezado {
+      height: 60px;
+      background-color: #c8e6c9; 
+      border-radius: 12px;
+      margin: 8px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .hero {
+      height: 200px;
+      background-color: #f8bbd0; 
+      border-radius: 12px;
+      margin: 8px;
+    }
+
+    .productos {
+      height: 250px;
+      background-color: #bbdefb; 
+      border-radius: 12px;
+      margin: 8px;
+    }
+
+    .promociones {
+      height: 200px;
+      background-color: #fff9c4; 
+      border-radius: 12px;
+      margin: 8px;
+    }
+
+    .footer {
+      height: 100px;
+      background-color: #6200ea; 
+      border-radius: 12px;
+      margin: 8px;
+    }
+
+    .left_container {
+      background-color: bisque;
+      border-radius: 12px;
+      padding: 10px;
+    }
+
+    .right_container {
+      background-color: rgb(100, 100, 227);
+      border-radius: 12px;
+      padding: 10px;
+
+      display: flex;
+      gap: 20px;
+    }
