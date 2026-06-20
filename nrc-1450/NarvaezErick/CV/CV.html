@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Erick Narváez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-gray-300 font-sans p-4 md:p-8 selection:bg-yellow-500 selection:text-zinc-900">
+
+    <!-- Div Principal -->
+    <div class="max-w-4xl mx-auto bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8 md:p-12 shadow-2xl">
+
+        <!-- Encabezado -->
+        <header class="flex flex-col items-center text-center mb-16 relative">
+            <h1 class="text-4xl md:text-5xl font-black uppercase tracking-widest text-white mb-2">
+                Erick<br><span class="text-yellow-500">Narváez</span>
+            </h1>
+            <p class="text-zinc-400 text-sm uppercase tracking-[0.2em] mb-8">Estudiante de Desarrollo de Software</p>
+            
+            <!-- Foto -->
+            <div class="w-36 h-36 rounded-full ring-4 ring-yellow-500 ring-offset-4 ring-offset-zinc-950 bg-zinc-800 flex items-center justify-center overflow-hidden shadow-[0_0_20px_rgba(234,179,8,0.2)]">
+                
+                <img src="Imagen1.jpg" alt="Príncipe Encantador" class="w-full h-full object-cover">
+            </div>
+        </header>
+
+        <!-- Cuadrícula Principal -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Col Izq (Experiencia y Educación) -->
+            <div class="md:col-span-2 space-y-12">
+                
+                <!-- Experiencia -->
+                <section>  <!-- Esta label ayuda a mantener un orden (sí, el comentario es mio profe) -->
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="material-symbols-outlined text-yellow-500 text-3xl">work</span>
+                        <h2 class="text-xl text-white font-bold uppercase tracking-widest">Experiencia y Proyectos</h2>
+                    </div>
+                    
+                    <div class="border-l-2 border-zinc-800 ml-3 pl-6 space-y-8">
+                        
+                        <!-- Experiencia 1 -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-yellow-500 rounded-full ring-4 ring-zinc-900"></div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-yellow-500 font-mono text-sm font-bold tracking-wider">Mar 2026 - Actualidad</span>
+                                <h3 class="font-bold text-lg text-white">Prácticas Preprofesionales</h3>
+                                <p class="text-zinc-400 text-sm font-medium">Mercately</p>
+                                <ul class="text-zinc-500 text-sm mt-2 leading-relaxed list-disc list-inside space-y-1">
+                                    <li>Creación de agentes de IA y soporte a CS.</li>
+                                    <li>Actividades de QA y Automatizaciones (MCP, Webhooks).</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experiencia 2 -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-zinc-700 rounded-full ring-4 ring-zinc-900"></div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-zinc-400 font-mono text-sm font-bold tracking-wider">2025 - Actualidad</span>
+                                <h3 class="font-bold text-lg text-white">Desarrollo de proyectos estudiantiles</h3>
+                                <p class="text-zinc-400 text-sm font-medium">PUCE</p>
+                                <ul class="text-zinc-500 text-sm mt-2 leading-relaxed list-disc list-inside space-y-1">
+                                    <li>PC Builder Assistant, usando POO, Flask, modularización, PostgreSQL.</li>
+                                    <li>Calculadora de matrices por consola, usando programación estructurada.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experiencia 3 -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-zinc-700 rounded-full ring-4 ring-zinc-900"></div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-zinc-400 font-mono text-sm font-bold tracking-wider">2021 - 2024</span>
+                                <h3 class="font-bold text-lg text-white">Gestión de web y plataforma educativa</h3>
+                                <p class="text-zinc-400 text-sm font-medium">SCT Global</p>
+                                <ul class="text-zinc-500 text-sm mt-2 leading-relaxed list-disc list-inside space-y-1">
+                                    <li>Gestión de plataforma WordPress para normativa legal y tributaria.</li>
+                                    <li>Gestión de plataforma Moodle para cursos ofertados.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Sección Educación -->
+                <section>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="material-symbols-outlined text-yellow-500 text-3xl">school</span>
+                        <h2 class="text-xl text-white font-bold uppercase tracking-widest">Educación</h2>
+                    </div>
+                    
+                    <div class="border-l-2 border-zinc-800 ml-3 pl-6 space-y-8">
+                        
+                        <!-- Educación 1 -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-yellow-500 rounded-full ring-4 ring-zinc-900"></div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-yellow-500 font-mono text-sm font-bold tracking-wider">2025 - Actualidad</span>
+                                <h3 class="font-bold text-lg text-white">Pontificia Universidad Católica del Ecuador</h3>
+                                <p class="text-zinc-400 text-sm font-medium">Tecnología en Desarrollo de Software (Segundo semestre finalizado)</p>
+                            </div>
+                        </div>
+
+                        <!-- Educación 2 -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-zinc-700 rounded-full ring-4 ring-zinc-900"></div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-zinc-400 font-mono text-sm font-bold tracking-wider">2018 - 2023</span>
+                                <h3 class="font-bold text-lg text-white">Universidad Central del Ecuador</h3>
+                                <p class="text-zinc-400 text-sm font-medium">Licenciatura en Comunicación Social (Énfasis en periodismo)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <!-- Col Der (Contacto y Habilidades) -->
+            <div class="space-y-12">
+                
+                <!-- Sección Contacto -->
+                <section>
+                    <h2 class="text-lg text-white font-bold uppercase tracking-widest mb-6 border-b border-zinc-800 pb-2">Contacto</h2>
+                    <ul class="text-zinc-400 text-sm space-y-4">
+                        <li class="flex items-center gap-4 hover:text-yellow-500 transition-colors cursor-default">
+                            <span class="material-symbols-outlined">call</span>
+                            0962980246
+                        </li>
+                        <li class="flex items-center gap-4 hover:text-yellow-500 transition-colors cursor-default">
+                            <span class="material-symbols-outlined">mail</span>
+                            ericknarvaez.dev@gmail.com
+                        </li>
+                        <li class="flex items-center gap-4 hover:text-yellow-500 transition-colors cursor-default">
+                            <span class="material-symbols-outlined">link</span>
+                            linkedin.com/in/ericknarvaez
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Sección Habilidades -->
+                <section>
+                    <h2 class="text-lg text-white font-bold uppercase tracking-widest mb-6 border-b border-zinc-800 pb-2">Habilidades</h2>
+                    
+                    <!-- Cuadrícula para los círculos de habilidades -->
+                    <div class="grid grid-cols-2 gap-6 mt-4 mb-8">
+                        
+                        <!-- Python -->
+                        <div class="flex flex-col items-center gap-2">
+                            <div class="w-16 h-16 rounded-full border-[3px] border-zinc-800 border-t-yellow-500 border-r-yellow-500 flex items-center justify-center rotate-45">
+                                <span class="text-white font-bold text-lg -rotate-45">PY</span>
+                            </div>
+                            <span class="text-xs uppercase tracking-wider text-zinc-500">Python</span>
+                        </div>
+
+                        <!-- PostgreSQL -->
+                        <div class="flex flex-col items-center gap-2">
+                            <div class="w-16 h-16 rounded-full border-[3px] border-zinc-800 border-t-yellow-500 border-r-yellow-500 flex items-center justify-center rotate-45">
+                                <span class="text-white font-bold text-lg -rotate-45">SQL</span>
+                            </div>
+                            <span class="text-xs uppercase tracking-wider text-zinc-500">PostgreSQL</span>
+                        </div>
+
+                        <!-- Git -->
+                        <div class="flex flex-col items-center gap-2">
+                            <div class="w-16 h-16 rounded-full border-[3px] border-zinc-800 border-t-yellow-500 border-r-yellow-500 flex items-center justify-center rotate-12">
+                                <span class="text-white font-bold text-lg -rotate-12">GIT</span>
+                            </div>
+                            <span class="text-xs uppercase tracking-wider text-zinc-500">Control Ver.</span>
+                        </div>
+
+                        <!-- Web -->
+                        <div class="flex flex-col items-center gap-2">
+                            <div class="w-16 h-16 rounded-full border-[3px] border-zinc-800 border-t-yellow-500 border-r-yellow-500 flex items-center justify-center rotate-[60deg]">
+                                <span class="text-white font-bold text-lg -rotate-[60deg]">WEB</span>
+                            </div>
+                            <span class="text-xs uppercase tracking-wider text-zinc-500">Flask / WP</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Adicionales -->
+                    <div>
+                        <h3 class="text-sm text-white font-bold uppercase tracking-widest mb-3">Herramientas</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">VS Code</span>
+                            <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Dbeaver</span>
+                            <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">WordPress</span>
+                            <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Moodle</span>
+                            <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Antigravity</span>
+                            <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Cursor</span>
+                            <span class="bg-zinc-800 text-zinc-300 text-xs px-3 py-1 rounded-full">Linux</span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
