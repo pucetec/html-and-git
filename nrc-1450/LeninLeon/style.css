@@ -1,0 +1,88 @@
+body {
+    text-align: center;
+}
+#mainConteiner {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+#firstConteiner {
+    background-color: orange;
+    width: 60%;
+}
+
+#seconConteiner {
+    background-color: orange;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    padding: 10px;
+}
+
+#seconConteiner .items {
+    color: aliceblue;
+}
+
+#center .contenedor {
+    color: aliceblue;
+}
+
+#center {
+    background-color: orangered;
+    align-items: center;
+}
+
+#producto {
+    background-color: papayawhip;
+    align-items: center;
+}
+
+#promo {
+    background-color: papayawhip;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja {
+    color: black;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.catalogo {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta {
+    align-items: center;
+    border: 8px black double;
+    border-radius: 16px;
+    width: 30%;
+}
+
+.promocatalogo {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.promodia {
+    align-items: center;
+    border: 8px white double;
+    border-radius: 16px;
+    width: 50%;
+    background-color: orangered; 
+    box-sizing: border-box;
+}
