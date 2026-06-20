@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>David Sanipatin - PUCETEC software</title>
+
+        <style>
+            div{
+                margin-top: 100px;
+                margin-bottom: 10px;
+                margin-left: 50px;
+                margin-right: 10px;
+                width: 500px;
+                background-color: aquamarine;
+                padding: 40px 30px 40px 30px;
+                border: 10px solid black;
+                border-radius: 20px;
+            }
+            #personalinfo{
+                background-color: lightblue;
+                padding: 30px 20px 30px 20px;
+            }
+            #tiposcomida{
+                background-color: lightgreen;
+                padding: 30px 20px 30px 20px;
+            }
+            #precaucion{
+                background-color: lightpink;
+                padding: 30px 20px 30px 20px;
+            }
+            .group{
+                margin-top: 20px;
+                padding: 30px 20px 30px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Formulario de cominadas favoritas
+        </h1>
+        <div>
+            <p>
+            Hola mundo, no se que hago :c
+            </p>
+        </div>
+
+        <div id="personalinfo">
+            <h2>
+                Datos Personales
+            </h2>
+            <div id="name">
+                <label for="nombre">Ingresa tu nombre:</label>
+                <input type="text" name="nombre" id="nombre"/>
+            </div>
+            <div id="email">
+                <label for="email_input">Ingresa tu correo:</label>
+                <input type="email" name="email" id="email_input"/>
+            </div>
+            <div id="archivo">
+                <label for="archivo">Subir foto</label>
+                <input type="file" name="foto"/>
+            </div>
+        </div>
+
+        <div id="tiposcomida">
+            <h2>
+                Tipos de comidas
+            </h2>
+            <div id="comidas">
+                <label for="comidas_select">elige tu comida favorita</label>
+                <select name="Comidas" id="comidas_select">
+                    <option value=\"\">Elige una comida</option>
+                    <option value="helado">Helado</option>
+                    <option value="lasaña">Lasana</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="seco_de_Pollo">Seco de Pollo</option>
+                    <option value="chaufa">Chaufa</option>
+                </select>
+            </div>
+            <div id="sazon">
+                <label>Sazón que Prefieres</label><br><br>
+                <input type="checkbox" name="tipos_de_Comida" value="ecuatoriana"/>Ecuatoriana
+                <input type="checkbox" name="tipos_de_Comida" value="espanol"/>Español
+                <input type="checkbox" name="tipos_de_Comida" value="italiana"/>Italiana
+                <input type="checkbox" name="tipos_de_Comida" value="japonesa"/>Japonesa
+                <input type="checkbox" name="tipos_de_Comida" value="koreana"/>Koreana
+            </div>
+        </div>
+
+        <div id="precaucion">
+            <h2>
+                Preguntas de precaucion
+            </h2>
+            <div id="enfermedad">
+                <label>¿Tienes alguna enfermedad?</label>
+                <input type="radio" name="privacidad" value="si"/>Sí
+                <input type="radio" name="privacidad" value="no"/>No
+            </div>
+        </div>
+
+        <div id="info">
+            <h2>
+                informacion sobre alergias
+            </h2>
+            <div class="group">
+                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medlineplus.gov/spanish/ency/article/000817.htm&ved=2ahUKEwj73fTWuKWUAxUxzvACHTKmMBIQFnoECB0QAQ&usg=AOvVaw2sjwT6r-wCZDS4EZSTPOhs" target="_blank">Mas sobre alergias</a>
+            </div>
+            <div class="group">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+        
+    </body>
+</html>
